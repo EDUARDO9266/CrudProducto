@@ -1,0 +1,17 @@
+
+
+Scaffold-DbContext "Server=EDUARDO\SQLEX;Database=BDAutos;User ID=sa;password=tich;" Microsoft.EntityFrameworkCore.SqlServer -Tables "Marca" -Context "ApiContext" -ContextDir "Models/Context" -OutputDir "Models/Entities" -NoPluralize -Force
+
+
+Scaffold-DbContext "Server=MSI;Database=InstitutoTich;User
+ID=sa;password=Pass2017;" Microsoft.EntityFrameworkCore.SqlServer -Tables
+"Estados" -Context EdoContext -ContextDir Models -OutputDir Models -
+NoPluralize -Force
+
+var builder= new ConfigurationBuilder().setBasePath(Directory.GetCurrenDirectory()).AddJsonFile("appsettings.json").Build();_urlWeAPI=builder.GetSection("urlWebAPI").Value;
+
+
+Scaffold-DbContext "Server=MSI;Database=InstitutoTich;User
+ID=sa;password=Pass2017;" Microsoft.EntityFrameworkCore.SqlServer -Tables
+"Estados" -Context EdoContext -ContextDir . -OutputDir ..\Entidades -NoPluralize -
+Force
