@@ -1,0 +1,11 @@
+Scaffold-DbContext "Server=MSI;Database=ClientesDB;User
+ID=sa;password=tich;" Microsoft.EntityFrameworkCore.SqlServer -Tables
+"Clientes" -Context ClientesContext -ContextDir Models -OutputDir Models -
+NoPluralize -Force
+
+Scaffold-DbContext "Server=EDUARDO\SQLEX;Database=ClientesDB;User ID=sa;password=tich;" Microsoft.EntityFrameworkCore.SqlServer -Tables Clientes -Context ClientesContext -ContextDir Models -OutputDir Models -NoPluralize -Force
+
+Scaffold-DbContext "Server=MSI;Database=InstitutoTich;User
+ID=sa;password=Pass2017;" Microsoft.EntityFrameworkCore.SqlServer -Tables
+"Estados" -Context EdoContext -ContextDir Models -OutputDir Models -
+NoPluralize -Force
