@@ -1,0 +1,4 @@
+builder.Services.AddDbContext<ClientesContext>(opcion =>
+{
+    opcion.UseSqlServer(builder.Configuration.GetConnectionString("ClienteDB"));
+});
